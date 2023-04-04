@@ -1,6 +1,9 @@
 function init(){
-//add your javascrip between these two lines of code
- 
+  function setAlert(){
+    alert('Ana Rosiles' + input);
+  }
+  var alertBt = document.getElementById('entrybutton');
+  alertBt.addEventListener('click', setAlert);
 
 
 

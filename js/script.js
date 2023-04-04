@@ -1,13 +1,11 @@
 function init(){
+  var button = document.getElementById('entrybutton');
+
   function setAlert(){
     var input = document.getElementById('entryinput');  
     alert('Ana Rosiles' + input);
   }
-  var alertBt = document.getElementById('entrybutton');
-  alertBt.addEventListener('click', setAlert);
-  alertBt.addEventListener('click', function(){
-    var resultTxt = document.getElementById('textoutput');
-    resultTxt.innerHTML = input;
-  }
+
+  button.addEventListener('click', setAlert);
 
 window.addEventListener('load', init);
